@@ -19,10 +19,10 @@ cat > /var/www/html/.env <<- _EOF_
 APP_ENV=stage['app_env']
 APP_DEBUG=true
 
-DB_HOST=stage['db_host']
-DB_DATABASE=stage['db']
-DB_USERNAME=stage['username']
-DB_PASSWORD=stage['password']
+DB_HOST=${stage['db_host']}
+DB_DATABASE=${stage['db']}
+DB_USERNAME=${stage['username']}
+DB_PASSWORD=${stage['password']}
 
 _EOF_
 
