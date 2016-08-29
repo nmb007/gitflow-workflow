@@ -1,3 +1,5 @@
+source /var/www/html/variables.sh
+
 if [ "$DEPLOYMENT_GROUP_NAME" == "live" ]
 then
 cat > /var/www/html/.env <<- _EOF_
