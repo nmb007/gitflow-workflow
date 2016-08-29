@@ -14,13 +14,13 @@ _EOF_
 elif [ "$DEPLOYMENT_GROUP_NAME" == "staging" ]
 then
 cat > /var/www/html/.env <<- _EOF_
-APP_ENV=staging
+APP_ENV=stage['app_env']
 APP_DEBUG=true
 
-DB_HOST=staging.dbhost.com
-DB_DATABASE=stage
-DB_USERNAME=admin
-DB_PASSWORD=coeus123!
+DB_HOST=stage['db_host']
+DB_DATABASE=stage['db']
+DB_USERNAME=stage['username']
+DB_PASSWORD=stage['password']
 
 _EOF_
 
